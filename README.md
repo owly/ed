@@ -29,5 +29,8 @@ You can log in as a teacher by using 'teacher' as the username and log in as a s
 Feel free to design your UI
 
 ![alt tag](https://raw.githubusercontent.com/edmodo/interview_homework/master/mocks/3%20list%20homework.png)
+![alt tag](https://github.com/edmodo/interview_homework/blob/master/mocks/4%20submission.png)
+![alt tag](https://github.com/edmodo/interview_homework/blob/master/mocks/5%20submissions.png)
+![alt tag](https://github.com/edmodo/interview_homework/blob/master/mocks/6%20all_submissions.png)
 
 Good Luck!
