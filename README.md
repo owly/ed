@@ -25,4 +25,9 @@ Open your web browser and go to http://localhost:3000
 
 You can log in as a teacher by using 'teacher' as the username and log in as a student by using 'student' as the username.
 
+# Mocks
+Feel free to design your UI
+
+![alt tag](https://raw.githubusercontent.com/edmodo/interview_homework/master/mocks/3%20list%20homework.png)
+
 Good Luck!
