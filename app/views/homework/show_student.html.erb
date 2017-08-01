@@ -1,0 +1,13 @@
+<h1>Homework</h1>
+  <tr>
+    <td><%= @homework.title %></td>
+    <td><%= @homework.question %></td>
+    <td><%= @homework.due_date %></td>
+  </tr>
+
+
+<%= form_for @submission do |f| %>
+	<%= hidden_field_tag 'submission[homework_id]', @homework.id %>
+  answer: <%= f.text_field :answer %><br />
+  <%= f.submit %>
+<% end %>

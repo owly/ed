@@ -1,0 +1,16 @@
+<h3>Recent submissions for <%= @homework.title %></h3>
+<table>
+    <thead>
+    <tr>
+      <th>Student</th>
+      <th>Answer</th>
+    </tr>
+  </thead>
+
+<% @submissions.each do |submission| %>
+  <tr>
+    <td><%= link_to submission.user.username, student_homework_path(:homework_id => @homework.id, :id => submission.user_id) %></td>
+    <td><%= submission.answer %></td>
+  </tr>
+<% end %>
+</table>

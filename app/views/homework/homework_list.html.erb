@@ -1,0 +1,15 @@
+<h1>Homework</h1>
+<table>
+  <thead>
+    <tr>
+      <th>Homework</th>
+      <th>Due date</th>
+    </tr>
+  </thead>
+  <% @homeworks.each do |homework| %>
+  <tr>
+    <td><%= link_to homework.title, homework_path(:id => homework.id) %></td>
+    <td><%= homework.due_date %></td>
+  </tr>
+<% end %>
+</table>

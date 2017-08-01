@@ -1,11 +1,25 @@
 Rails.application.routes.draw do
+  get 'submissions/homework_recent'
+
+  get 'submissions/user'
+
+  get 'homework/index'
+  get 'homework/student_list'
+  get 'homework/student/:id/:homework_id', to: 'homework#student', as: 'student_homework'
+
+  get 'homework/:id', to: 'homework#show', as: 'homework'
+
+  resources :submissions
+  get 'submissions/new/:id', to: 'submissions#new', as: 'submissions_new'
+  
   get 'welcome/index'
 
+  get "assignment/:id", to: 'homework#assignment', as: 'assignment'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-  root 'welcome#index'
+  root 'homework#homework_list'
 
   get 'login', to: 'sessions#new', as: 'login'
   post 'login', to: 'sessions#create', as: 'session'

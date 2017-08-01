@@ -1,0 +1,16 @@
+<h3>Recent submissions for <%= @homework.title %> for Student <%= @student.username %></h3>
+<table>
+    <thead>
+    <tr>
+      <th>id</th>
+      <th>Answer</th>
+    </tr>
+  </thead>
+
+<% @submissions.each do |submission| %>
+  <tr>
+    <td><%= submission.id %></td>
+    <td><%= submission.answer %></td>
+  </tr>
+<% end %>
+</table>
